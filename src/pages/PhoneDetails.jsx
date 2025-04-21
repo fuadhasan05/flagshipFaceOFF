@@ -2,6 +2,7 @@ import React from 'react';
 import { useLoaderData, useParams } from 'react-router';
 import Button from './ui/Button';
 import { MdBookmarkAdd, MdOutlineShoppingCartCheckout } from "react-icons/md";
+import { addFavorite } from '../utilities';
 
 const PhoneDetails = () => {
     const data = useLoaderData();
@@ -9,6 +10,10 @@ const PhoneDetails = () => {
     const singlePhone = data.find(phone => phone.id === parseInt(id));
 
     const { name, image, brand, model, storage, description, camera_info, price } = singlePhone || {};
+
+    const handleFavorite = () => {
+        addFavorite(singlePhone);
+    }
     return (
         <div className='py-12 w-full'>
             <img src={image} alt="Banner Img"
@@ -18,9 +23,11 @@ const PhoneDetails = () => {
                 <h1 className='font-thin text-7xl'>{name}</h1>
                 <div className='flex items-center space-x-4'>
                     <Button label={<MdOutlineShoppingCartCheckout />}></Button>
-                    <Button label={<MdBookmarkAdd />}></Button>
+                    <Button onClick={handleFavorite} label={<MdBookmarkAdd />}></Button>
                 </div>
             </div>
+
+            {/* phone details */}
             <div className='font-thin text-5xl pt-10'>
                 <h2>Details:</h2>
             </div>
@@ -35,7 +42,7 @@ const PhoneDetails = () => {
                     <span className='font-bold'>Storage:</span> {storage}
                 </p>
                 <p className='text-lg pt-4 flex gap-2'>
-                <h3 className='text-black font-bold'>Price:</h3>
+                <h1 className='text-black font-bold'>Price:</h1>
                     <div>
                         <p>256GB: {price["256GB"]}</p>
                         <p>512GB: {price["512GB"]}</p>

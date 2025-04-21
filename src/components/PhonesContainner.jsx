@@ -22,13 +22,12 @@ const PhonesContainner = ({ phones }) => {
                     displayPhones.map(phone => <PhoneCard key={phone.id} phone={phone}></PhoneCard>)
                 }
             </div>
-
             <Button
                 onClick={() => {
                     setShowAll(!showAll)
                     if (showAll) window.scrollTo(0, 400)
-                }} type='submit' label={showAll ? 'Show Less' : 'Show All'}></Button>
-
+                }} type='submit' label={showAll ? 'Show Less' : 'Show All'}>
+            </Button>
         </div>
     );
 };
