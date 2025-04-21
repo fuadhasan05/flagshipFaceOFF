@@ -15,3 +15,9 @@ export const addFavorite = phone => {
     favorites.push(phone)
     localStorage.setItem('favorite', JSON.stringify(favorites))
 }
+
+export const removeFavorite = id => {
+    const favorites = getFavorites()
+    const remaining = favorites.filter(fav => fav.id !== id)
+    localStorage.setItem('favorite', JSON.stringify(remaining))
+}
