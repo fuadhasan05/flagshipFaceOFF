@@ -14,11 +14,11 @@ const Hero = () => {
                     Browse, Search, View, Buy
                 </h1>
                 <p className='text-gray-500'>
-                    Best place to browse, search, view details and purchase of top flagship phones
+                    Best place to browse, search, view details and purchase of top flagship phones <br />
                     of the current time - FlagshipFaceOff
                 </p>
                 <form className="flex flex-col md:flex-row justify-center items-center mb-4 md:px-24">
-                    <input type="text" placeholder='Search Phone by name'
+                    <input type="text" placeholder='Search Phone by Name'
                         className='bg-white border border-gray-200 rounded shadow-md w-2/3 h-12 px-4 mb-3
                 focus:outline-none focus:shadow-outline md:mr-2 md:mb-0'
                     />
