@@ -1,5 +1,5 @@
 ## Live Link
-[text](https://flagshipphone.netlify.app/)
+[Flagship Face-Off](https://flagshipphone.netlify.app/)
 
 # Flagship Face-Off
 
