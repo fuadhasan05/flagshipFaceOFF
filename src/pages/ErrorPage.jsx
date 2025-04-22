@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
-import { useRouteError } from 'react-router';
+import { Link, useRouteError } from 'react-router';
 import Button from './ui/Button';
 
 const ErrorPage = () => {
