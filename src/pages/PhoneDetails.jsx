@@ -20,15 +20,15 @@ const PhoneDetails = () => {
                 className='w-full mx-auto md:w-auto mb-8'
             />
             <div className="flex justify-between">
-                <h1 className='font-thin text-7xl'>{name}</h1>
-                <div className='flex items-center space-x-4'>
+                <h1 className='font-thin text-5xl md:text-6xl lg:text-7xl'>{name}</h1>
+                <div className='lg:flex items-center space-x-4'>
                     <Button label={<MdOutlineShoppingCartCheckout />}></Button>
                     <Button onClick={handleFavorite} label={<MdBookmarkAdd />}></Button>
                 </div>
             </div>
 
             {/* phone details */}
-            <div className='font-thin text-5xl pt-10'>
+            <div className='font-thin text-4xl lg:text-5xl pt-10'>
                 <h2>Details:</h2>
             </div>
             <div>
