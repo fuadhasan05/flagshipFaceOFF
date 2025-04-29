@@ -47,5 +47,4 @@ Global styles are defined in [`src/index.css`](src/index.css) and [`src/App.css`
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-repo/flagship-face-off.git
-   cd flagship-face-off
+   git clone https://github.com/fuadhasan05/flagshipFaceOFF.git
